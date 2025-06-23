@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../assets/img/alejo.jpg);
+  background-size: cover;
+  background-position: 100% 30%;
+  background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+header {
+  background-color: rgb(200, 162, 200);
+  border-bottom: 5px black;
+}
+
+.header {
+  background-color: rgb(200, 162, 200);
+  max-height: 60px;
+  padding: 30px;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.781);
+  margin-inline: 25px;
+  text-decoration: none;
+  font-size: large;
+
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#logo {
+  width: 100px;
+}
