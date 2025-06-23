@@ -1,19 +1,23 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Montserrat";
 }
 
-body {
+main {
   background-image: url(../assets/img/alejo.jpg);
   background-size: cover;
   background-position: 100% 30%;
   background-repeat: no-repeat;
+  height: 90vh;
+  max-width: 100vw;
+
 }
 
 /* NAVBAR */
 header {
   background-color: rgb(200, 162, 200);
-  border-bottom: 5px black;
+
 }
 
 .header {
@@ -24,10 +28,17 @@ header {
 
 a {
   color: rgba(0, 0, 0, 0.781);
-  margin-inline: 25px;
+  margin-inline: 15px;
   text-decoration: none;
   font-size: large;
+  transition: 0.5s ease;
+  padding: 13px;
+  border-radius: 50px;
 
+}
+
+a:hover {
+  background-color: rgb(140, 200, 190)
 }
 
 .links {
@@ -37,6 +48,113 @@ a {
   padding: 0;
 }
 
+/* main */
+.contenedor {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.logo-main {
+  margin: 170px 170px 0 0;
+  background-color: rgb(200, 162, 200);
+  width: 300px;
+  border-radius: 100%;
+  animation: logo 2s;
+}
+
 #logo {
   width: 100px;
+}
+
+.circulo-1 {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(200, 162, 200);
+  position: absolute;
+  top: 490px;
+  right: 210px;
+  border-radius: 50%;
+  animation: uno 0.5s forwards;
+  animation-delay: 2s;
+  z-index: -100;
+}
+
+.circulo-2 {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(200, 162, 200);
+  position: absolute;
+  top: 420px;
+  right: 125px;
+  border-radius: 50%;
+  animation: dos 0.5s forwards;
+  animation-delay: 2.5s;
+  z-index: -100;
+}
+
+.circulo-3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(200, 162, 200);
+  position: absolute;
+  top: 300px;
+  right: 55px;
+  border-radius: 50%;
+  animation: tres 0.5s forwards;
+  animation-delay: 3s;
+  z-index: -100;
+}
+
+/* animacion-main */
+@keyframes logo {
+  0% {
+    transform: scale(0);
+
+  }
+
+
+  100% {
+    transform: scale(1);
+
+  }
+}
+
+@keyframes uno {
+  0% {
+    transform: scale(0);
+    z-index: 2;
+  }
+
+
+  100% {
+    transform: scale(1);
+    z-index: 2;
+  }
+}
+
+@keyframes dos {
+  0% {
+    transform: scale(0);
+    z-index: 2;
+  }
+
+
+  100% {
+    transform: scale(1);
+    z-index: 2;
+  }
+}
+
+@keyframes tres {
+  0% {
+    transform: scale(0);
+    z-index: 2;
+  }
+
+
+  100% {
+    transform: scale(1);
+    z-index: 2;
+  }
 }
